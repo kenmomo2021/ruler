@@ -1,0 +1,57 @@
+{
+  "name": "ruler",
+  "version": "1.0.0",
+  "description": "A draggable on-screen ruler with adjustable length, free rotation, and millimeter scale",
+  "main": "out/main/index.js",
+  "author": "kenmomo2021",
+  "license": "MIT",
+  "homepage": "https://github.com/kenmomo2021/ruler#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenmomo2021/ruler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kenmomo2021/ruler/issues"
+  },
+  "keywords": [
+    "electron",
+    "ruler",
+    "measure",
+    "screen-ruler",
+    "millimeter",
+    "dpi",
+    "calibration",
+    "utility"
+  ],
+  "categories": [
+    "Utility"
+  ],
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "build:win": "electron-vite build && electron-builder --win",
+    "build:mac": "electron-vite build && electron-builder --mac",
+    "build:linux": "electron-vite build && electron-builder --linux",
+    "typecheck:node": "tsc --noEmit -p tsconfig.node.json --composite false",
+    "typecheck:web": "tsc --noEmit -p tsconfig.web.json --composite false",
+    "typecheck": "npm run typecheck:node && npm run typecheck:web",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write \"**/*.{ts,css,html,md,json,yml,yaml}\"",
+    "format:check": "prettier --check \"**/*.{ts,css,html,md,json,yml,yaml}\""
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.8",
+    "electron-vite": "^2.3.0",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.0",
+    "typescript": "^5.6.0",
+    "vite": "^5.4.0"
+  }
+}

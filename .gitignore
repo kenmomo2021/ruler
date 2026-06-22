@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Build output
+out/
+dist/
+out-tsc/
+
+# Logs
+*.log
+logs/
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.user
+*.swp
+*.swo
+
+# dotenv
+.env
+.env.local
+.env.*.local
+
+# electron-builder cache
+release/
